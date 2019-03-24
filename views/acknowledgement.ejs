@@ -1,0 +1,31 @@
+<head>
+    <title>Response</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="CSS/acknowledgement.css">
+</head>
+<body>
+    <div class="container">
+            <%if(res){%>
+                <div class="jumbotron col-sm-12" >
+                    <h1 class="display-4">Hello, user!</h1>
+                    <p class="lead">You have successfully verified yourself!</p>
+                    <hr class="my-4">
+                    <p>Contact number: <%=res%></p>
+                    <button class="btn btn-primary" onclick="window.location.href='/'">Go back to home page</button>    
+                </div>
+            <%}else{%>
+                <div class="jumbotron col-sm-12" >
+                    <h1 class="display-4">Oops!</h1>
+                    <p class="lead">Verification failed!</p>
+                    <hr class="my-4">
+                    <p>Try again!</p>
+                    <button class="btn btn-primary" onclick="window.location.href='/'">Go back to home page</button>
+                </div>
+            <%}%>
+    </div>    
+</body>
+
+
+
+
+

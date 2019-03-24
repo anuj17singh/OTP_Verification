@@ -1,0 +1,36 @@
+<head>
+    <title>
+        OTP verification
+    </title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="CSS/form.css">
+    <script typt="text/javascript" src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+</head>
+<body>
+    <div class="container col-lg-8 " >
+        <h1>Verification Time</h1>
+        
+        <div class="alert alert-danger" role="alert"></div>
+
+        <form id="form1">
+            <div class="form-group" >
+                <label class="col-sm-12">Enter your contact number</label>
+                <input type="text" class="form-control col-sm-12" id="phoneNumber" name="number"  placeholder="Enter a valid contact number" >
+            </div>
+            <button type="button" class="btn btn-primary col-sm-12" id="submitNumber" >Send</button>
+        </form>
+
+        <form id="form2" action="/submit" method="POST">
+            <div class="form-group">
+                <label class="col-sm-12">You need to enter your OTP</label>
+                <input type="number" class="form-control col-sm-12" id="otp" name="pin" placeholder="Enter the 6 digit pin">
+            </div>
+            <button type="submit" class="btn btn-primary col-sm-12" >Verify</button>
+        </form>
+        
+    </div>
+</body>
+    
+<script type="text/javascript" src="JS/form.js"></script>
+    
+    
